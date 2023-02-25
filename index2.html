@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.1/sweetalert2.css" integrity="sha512-0BcnfLcXBm81KVM/wzoS7yZRVflcQC3rj/Wqgi4cHSGktXTMcXrP6kquf1I14JFUj2LiFCfpZCSf/+478ifefA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <style>
+        .error{
+            background-color: #b96565;
+            height: 25px;
+            width: 406px;
+            color: #181414;
+            margin-top: -9px;
+            padding-top: 3px;
+            border-radius: 3px;
+            margin-bottom: 8px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="add-course">
+       
+        <div class="container">
+
+            <h1>CRUD System</h1>
+
+        <label  for="courseName">course name</label>
+        <input class="inputs" type="text" placeholder="course name"  id="courseName">
+        <div class="error">error first leter not capetal</div> 
+
+        <label  for="">course category</label>
+        <input class="inputs" type="text" placeholder="course category"  id="courseCategory">
+        <div class="error"></div>
+
+        <label  for="">course price</label>
+        <input class="inputs" type="number" placeholder="course price" id="coursePrice" >
+        <div class="error"></div>
+
+        <label  for="">course description</label>
+        <textarea class="inpu  ts" id="courseDescription"></textarea>
+        <div class="error"></div>
+
+        <button onclick="creatCourse()">Add Cource</button>
+        <button onclick="clearr()">clear</button>
+
+
+
+    </div>
+
+    <input type="search" onkeyup="searchC()" placeholder="search... " id="search" >
+
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <!-- <th>#</th> -->
+                <th>id</th>
+                <th>name</th>
+                <th>category</th>
+                <th>price</th>
+                <th>description</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+
+        <tbody id="data">
+
+        </tbody>
+    </table>
+    </div>
+    
+
+<!-- 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.1/sweetalert2.min.js" integrity="sha512-TZHwBGULaChdwt6/Y+eYLQZGLvuNdJV6ZlszDZAzczToJgjJtB/JEjxrethtTZMmvIuCGmzTgFXcOjNIP0zogg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
